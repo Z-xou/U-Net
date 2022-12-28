@@ -21,19 +21,10 @@ Sometimes, the *test dataset* requires data preprocessing - as to scale the valu
 
 **Files**
 
-There are several folders and code sources, below is the brief introduction of each of them. 
+There are several code sources, below is the brief introduction: 
 
-* Rells (shortly from rectangle+ellipse)
-  - This is the training dataset, it is already splitted for all of the numbers of figures
-  - So as image_input you may take the path: ‘...10_out/traing_images/images’
-  - For the mask_input: ‘...10_out/traing_masks/masks’ 
-
-* Filaments
-  - This is the test dataset, which contains Herschel, Planck datasets
-  - It is already prepocessed, so you can freely use it
-  
 * UNet.ipynb
   - If you want to know more about the code: https://github.com/bnsreenu/python_for_image_processing_APEER/blob/master/tutorial121b_loading_data_from_drive_in_batches_for_unet_training.ipynb
 
-* Rell.ipynb
+* Rell.ipynb (shortly from rectangle + ellipse)
   - This is where training dataset is generated

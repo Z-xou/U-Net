@@ -7,7 +7,7 @@ This study exploits the efficiency of U-Net trained on geometrical shapes such a
 
 **Methods**
 
-Overall, you will need training dataset (rectangles, ellipses) and testing dataset (Herschel, Planck telescope data) for the model. This U-Net model requires image_input and mask_input to our training data. This is how they look:
+Overall, you will need training dataset (rectangles, ellipses) and testing dataset (Herschel, Planck telescope data) for the model. The model requires image_input and mask_input to our training data. This is how they look:
 
 <img width="535" alt="Снимок экрана 2022-12-28 в 00 38 44" src="https://user-images.githubusercontent.com/74349608/209708692-22b6cdc3-f0da-421a-a1df-c9455dcfb488.png">
 
@@ -15,7 +15,7 @@ These figures’ widths range from 1/15 of the map to ⅓ of the map, and the he
 
 The maps for the *mask_input* are also 128x128-sized images, where each pixel represents the angles of the rotated figures or 0 if there is no rectangle, so there are 181 classes.
 
-In the *training dataset* there are 10-90 such figures (rectangle, ellipse) with a step of 10. By alternating the sizes, shapes of the figures in the training dataset, the performance of our model also changes. 
+In the *training dataset* there are 10-90 such figures (rectangle, ellipse) with a step of 10. By alternating the sizes, shapes of the figures in the training dataset, the performance of the model also changes. 
 
 Sometimes, the *test dataset* requires data preprocessing - as to scale the values in the image for the proper format, change the image sizes, turn fits files into png format an etc.
 
